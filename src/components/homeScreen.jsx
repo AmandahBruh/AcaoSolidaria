@@ -4,7 +4,9 @@ import { styles } from "../utils/styles";
 export default function Home(){
     return (
         <View style={styles.container}>
-            <Text>Aqui ó</Text>
+                <Text style={styles.titulo}>Ação Solidaria</Text>
+            <View style={styles.box}>
+            </View>
         </View>
     );
 }
