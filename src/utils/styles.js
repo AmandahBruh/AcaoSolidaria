@@ -1,6 +1,10 @@
 import { StyleSheet } from "react-native";
 
+// @autor Joao Gabriel <joao.alves1@alunos.sc.senac.br>
+// @description CSS global do App
+
 export const styles = StyleSheet.create({
+    //Estilos universais "eu acho"
     container:{
         width:"100%",
         alignItems:"center",
@@ -12,6 +16,7 @@ export const styles = StyleSheet.create({
         fontWeight:'bold',
         fontSize:30,
     },
+    //Box do HomeScreen
     box:{
         width:"100%",
         height:"100%",
