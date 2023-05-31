@@ -7,7 +7,7 @@ import { customTheme } from "./src/utils/theme";
 /**
  * @author             João Gabriel
  * @description        apps
- * @version            1.0.0
+ * @version            1.01
  * @since              1.0.0
  *
  *
