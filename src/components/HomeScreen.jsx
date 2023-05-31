@@ -21,6 +21,7 @@ export default function Home({navigation}) {
       <Text style={styles.titulo}>Ação Solidaria</Text>
 
       <View style={styles.box}>
+        {/* arrumar a navegação do botão */}
           <Button
               title="Login"
               onPress={() => navigation.navigate(loginScreen)}

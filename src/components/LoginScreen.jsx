@@ -16,6 +16,7 @@ export default function LoginScreen(){
     return (
         <View style={styles.container}>
 
+            {/* fazer um componente para o header */}
             <View style={styles.Header}>
                 <Text style={styles.titulo}>Login</Text>
             </View> 
