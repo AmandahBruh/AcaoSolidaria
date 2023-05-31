@@ -1,6 +1,8 @@
-import { View, Text, Button } from "react-native";
+import { View, Text } from "react-native";
 import { styles } from "../utils/styles";
 import React from "react";
+import Header from "./header/Header";
+import { Button } from "react-native-paper";
 
 /**
  * @author          João Gabriel <joao.gabriel@alunos.sc.senac.br>
@@ -13,30 +15,44 @@ import React from "react";
  * @return          {React.Component}
  */
 
-export default function Home({navigation}) {
+export default function Home({ navigation }) {
   return (
     <View style={styles.containerH}>
+      <Header />
 
-      <Text style={styles.titulo}>Ação Solidaria</Text>
-
-      <View style={styles.box}>
+      <View>
         {/* arrumar a navegação do botão */}
-          <Button
-              title="Login"
-              onPress={() => navigation.navigate('LoginScreen')}
-          />
-          <Button
-              title="CadastrarIScreens"
-              onPress={() => navigation.navigate('CadastrarIScreens')}
-          />
-          <Button
-              title="CadastrarPScreens"
-              onPress={() => navigation.navigate('CadastrarPScreens')}
-          />
-          <Button
-              title="VerMaisScreen"
-              onPress={() => navigation.navigate('VerMaisScreen')}
-          />
+        <Button
+          style={styles.Button}
+          onPress={() => navigation.navigate("LoginScreen")}
+          mode="contained"
+        >
+          Login
+        </Button>
+        <Button
+          style={styles.Button}
+          mode="contained"
+          onPress={() => navigation.navigate("CadastrarIScreens")}
+          color="#000"
+        >
+          Cadastrar
+        </Button>
+        <Button
+          style={styles.Button}
+          mode="contained"
+          onPress={() => navigation.navigate("CadastrarPScreens")}
+          color="#000"
+        >
+          Cadastrar 2
+        </Button>
+        <Button
+          style={styles.Button}
+          mode="contained"
+          onPress={() => navigation.navigate("VerMaisScreen")}
+          color="#000"
+        >
+          Ver Mais
+        </Button>
       </View>
     </View>
   );

@@ -37,8 +37,15 @@ export const styles = StyleSheet.create({
         width:"100%",
         height:"100%",
         alignItems:"center",
+        backgroundColor:"#D4D4D4",
+    },
+    Button:{
+        width:"100%",
+        height:50,
+        marginBottom:20,
         justifyContent:"center",
         backgroundColor:"#000",
+        borderRadius:7,
     },
 
     //LoginScreen

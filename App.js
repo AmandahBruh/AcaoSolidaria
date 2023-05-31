@@ -1,5 +1,8 @@
 import React from "react";
 import RootNavigation from "./src/index";
+import { Provider as NativeProvider } from "react-native-paper";
+import { useColorScheme } from "react-native";
+import { customTheme } from "./src/utils/theme";
 
 /**
  * @author             João Gabriel
@@ -14,5 +17,12 @@ import RootNavigation from "./src/index";
  */
 
 export default function App() {
-  return <RootNavigation />;
+  // const theme = useColorScheme();
+  // const themeDark = customTheme.dark;
+  // const themeLight = customTheme.light;
+  return (
+    // <NativeProvider theme={theme === "dark" ? themeDark : themeLight}>
+    // </NativeProvider>
+      <RootNavigation />
+  );
 }
