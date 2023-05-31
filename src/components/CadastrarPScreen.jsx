@@ -11,7 +11,7 @@ import styles from "../utils/styles";
  * @return          {React.Component} 
  */
 
-export default function cadastrarPScreen(){
+export default function CadastrarPScreen(){
     return (
         <View style={styles.container}>
             <Text>Aqui ó</Text>

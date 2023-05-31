@@ -1,27 +1,18 @@
-import { View } from 'react-native';
-import Home from './src/components/homeScreen';
-import { styles } from './src/utils/styles';
-import React from 'react';
-
-
+import React from "react";
+import RootNavigation from "./src/index";
 
 /**
  * @author             João Gabriel
  * @description        apps
  * @version            1.0.0
  * @since              1.0.0
- * 
- * 
- * @param              {Object} navigation Objeto de navegação do React 
+ *
+ *
+ * @param              {Object} navigation Objeto de navegação do React
  * @export             {function}
- * @return             {React.Component} 
+ * @return             {React.Component}
  */
 
-
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Home />
-    </View>
-  );
+  return <RootNavigation />;
 }
