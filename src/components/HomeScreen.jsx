@@ -35,7 +35,7 @@ export default function Home({ navigation }) {
           onPress={() => navigation.navigate("CadastrarIScreens")}
           color="#000"
         >
-          Cadastrar
+          Cadastrar Instituições
         </Button>
         <Button
           style={styles.Button}
@@ -43,7 +43,7 @@ export default function Home({ navigation }) {
           onPress={() => navigation.navigate("CadastrarPScreens")}
           color="#000"
         >
-          Cadastrar 2
+          Cadastrar Pessoas
         </Button>
         <Button
           style={styles.Button}
