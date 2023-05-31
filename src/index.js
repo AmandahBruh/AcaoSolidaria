@@ -2,8 +2,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import { NavigationContainer } from "@react-navigation/native";
 import Home from "./components/HomeScreen";
-import cadastrarIScreens from "./components/CadastrarIScreen";
-import cadastrarPScreens from "./components/CadastrarPScreen";
+import CadastrarIScreens from "./components/CadastrarIScreen";
+import CadastrarPScreens from "./components/CadastrarPScreen";
 import LoginScreen from "./components/LoginScreen";
 import VerMaisScreen from "./components/VerMaisScreen";
 
@@ -44,14 +44,20 @@ function TabsNavigator() {
       inactiveColor="#FFFFFF"
     >
       <Tabs.Screen name="Home" component={Home} />
-      <Tabs.Screen name="Login" component={LoginScreen} />
-      <Tabs.Screen name="Ver mais" component={VerMaisScreen} />
+
+      <Tabs.Screen name="LoginScreen" component={LoginScreen} />
+
+      <Tabs.Screen 
+        name="VerMaisScreen" 
+        component={VerMaisScreen} 
+      />
+
       <Tabs.Screen
-        name="Cadastrar instituições"
-        component={cadastrarIScreens}
+        name="CadastrarIScreens" //cadastrarIScreens
+        component={CadastrarIScreens}
         
       />
-      <Tabs.Screen name="Cadastrar pessoas" component={cadastrarPScreens} />
+      <Tabs.Screen name="CadastrarPScreens" component={CadastrarPScreens} />
     </Tabs.Navigator>
   );
 }

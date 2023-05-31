@@ -7,9 +7,8 @@ export const styles = StyleSheet.create({
     //Estilos universais "eu acho"
     container:{
         flex: 1,
-        backgroundColor: '#fff',
-        alignItems: 'center',
-        justifyContent: 'center',
+        backgroundColor: '#D4D4D4',
+        alignItems: 'center', 
         height:"100%",
     },
     titulo:{
@@ -20,12 +19,12 @@ export const styles = StyleSheet.create({
     Header:{
         width:"100%",
         height:100,
-        flexDirection:"row",
         alignItems:"center",
         justifyContent:"center",
         backgroundColor:"#000",
-        marginBottom:20,
+        marginBottom:140,
     },
+
     //HomeScreen
     box:{
         width:"100%",
@@ -41,6 +40,7 @@ export const styles = StyleSheet.create({
         justifyContent:"center",
         backgroundColor:"#000",
     },
+
     //LoginScreen
     input:{
         width:"60%",
@@ -51,11 +51,16 @@ export const styles = StyleSheet.create({
         borderBottomWidth:3,
         marginTop:30,
     },
-    containerL:{
+    boxL:{
         width:"100%",
+        height:400,
         alignItems:"center",
+        textAlign:"right",
         justifyContent:"center",
-        backgroundColor:"#fff",
+        backgroundColor:"#D4D4D4",
+    },
+    textoInput:{
+        marginBottom:30,
     },
 })
 

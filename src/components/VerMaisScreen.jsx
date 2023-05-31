@@ -11,7 +11,7 @@ import styles from "../utils/styles";
  * @return          {React.Component} 
  */
 
-export default function VerMaisScreen(){
+export default function VerMaisScreen({}){
     return (
         <View>
             <Text>Aqui ó</Text>

@@ -1,6 +1,7 @@
 import { View, Text, TouchableOpacity, Button } from "react-native";
 import { TextInput } from "react-native-paper";
 import styles from "../utils/styles";
+import Header from "./header/Header";
 
 /**
  * @author          João Gabriel <joao.alves1@alunos.sc.senac.br>
@@ -12,37 +13,36 @@ import styles from "../utils/styles";
  * @return          {React.Component} 
  */
 
-export default function LoginScreen(){
+export default function LoginScreen({navigation}){
     return (
         <View style={styles.container}>
 
-            {/* fazer um componente para o header */}
-            <View style={styles.Header}>
-                <Text style={styles.titulo}>Login</Text>
-            </View> 
+            <Header />
+            
+            <View style={styles.boxL}>
 
-            <TextInput
-            placeholder="Login..."
-            style={styles.input}
-            />  
-            <TouchableOpacity>
-            <Text>Cadastre-se</Text>
-            </TouchableOpacity> 
+                <TextInput
+                placeholder="Login..."
+                style={styles.input}
+                />  
+                <TouchableOpacity>
+                <Text>Cadastre-se</Text>
+                </TouchableOpacity> 
 
-            <TextInput
-            placeholder="Senha..."
-            style={styles.input}
-            />
-            <TouchableOpacity>
-            <Text>Esqueceu a senha ?</Text>
-            </TouchableOpacity>
+                <TextInput
+                placeholder="Senha..."
+                style={styles.input}
+                />
+                <TouchableOpacity>
+                <Text style={styles.textoInput}>Esqueceu a senha ?</Text>
+                </TouchableOpacity>
 
-            <Button
-            title="Logar"
-            color="#000"
-            />
-
-               
+                <Button
+                title="Logar"
+                color="#000"
+                style={styles.Button}
+                />
+            </View>    
 
         </View>
     );

@@ -1,7 +1,6 @@
 import { View, Text, Button } from "react-native";
 import { styles } from "../utils/styles";
 import React from "react";
-import loginScreen from "./LoginScreen";
 
 /**
  * @author          João Gabriel <joao.gabriel@alunos.sc.senac.br>
@@ -24,7 +23,19 @@ export default function Home({navigation}) {
         {/* arrumar a navegação do botão */}
           <Button
               title="Login"
-              onPress={() => navigation.navigate(loginScreen)}
+              onPress={() => navigation.navigate('LoginScreen')}
+          />
+          <Button
+              title="CadastrarIScreens"
+              onPress={() => navigation.navigate('CadastrarIScreens')}
+          />
+          <Button
+              title="CadastrarPScreens"
+              onPress={() => navigation.navigate('CadastrarPScreens')}
+          />
+          <Button
+              title="VerMaisScreen"
+              onPress={() => navigation.navigate('VerMaisScreen')}
           />
       </View>
     </View>
