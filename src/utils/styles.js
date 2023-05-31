@@ -49,7 +49,7 @@ export const styles = StyleSheet.create({
         borderTopRightRadius:9,
         borderBottomColor:'#000',
         borderBottomWidth:3,
-        marginBottom:30,
+        marginTop:30,
     },
     containerL:{
         width:"100%",

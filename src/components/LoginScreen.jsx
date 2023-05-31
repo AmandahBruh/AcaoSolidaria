@@ -24,20 +24,25 @@ export default function LoginScreen(){
             <TextInput
             placeholder="Login..."
             style={styles.input}
-            />    
+            />  
+            <TouchableOpacity>
+            <Text>Cadastre-se</Text>
+            </TouchableOpacity> 
+
             <TextInput
             placeholder="Senha..."
             style={styles.input}
             />
+            <TouchableOpacity>
+            <Text>Esqueceu a senha ?</Text>
+            </TouchableOpacity>
 
             <Button
-            title="Enviar"
+            title="Logar"
             color="#000"
             />
 
-            <TouchableOpacity>
-            <Text>Cadastre-se</Text>
-            </TouchableOpacity>    
+               
 
         </View>
     );
