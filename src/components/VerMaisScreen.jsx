@@ -1,4 +1,5 @@
-import { View, Text, SafeAreaView, ScrollView } from "react-native";
+import { View, Text, SafeAreaView, ScrollView, Image,  } from "react-native";
+import { TextInput } from "react-native-paper";
 import styles from "../utils/styles";
 import Header from "./header/Header";
 
@@ -16,22 +17,44 @@ import Header from "./header/Header";
 export default function VerMaisScreen({}){
     return (
         <SafeAreaView style={styles.container}>
-                        <Header/>
+            <Header/>
 
-            <ScrollView>
+            <TextInput
+                style={styles.inputV}
+                placeholder="Pesquise"
+            />
+
+            <ScrollView style={styles.rolagem}>
 
             <Text>Aqui ó</Text>
 
             <View style={styles.lines}>
-                <Image />
+                
+                <Text>Instituição A:</Text>
+                <Image 
+                style={styles.image}
+                    source={{
+                        uri: ' https://gamerview.uai.com.br/wp-content/uploads/2022/09/Tanjiro-Demon-Slayer-DLC.jpg ',
+                      }}
+                />
             </View>
-
             <View style={styles.lines}>
-                <Image />
+                <Text>Instituição B:</Text>
+                <Image 
+                style={styles.image}
+                    source={{
+                        uri: ' https://gamerview.uai.com.br/wp-content/uploads/2022/09/Tanjiro-Demon-Slayer-DLC.jpg ',
+                      }}
+                />
             </View>
-
             <View style={styles.lines}>
-                <Image />
+                <Text>Instituição C:</Text>
+                <Image 
+                style={styles.image}
+                    source={{
+                        uri: ' https://gamerview.uai.com.br/wp-content/uploads/2022/09/Tanjiro-Demon-Slayer-DLC.jpg ',
+                      }}
+                />
             </View>
 
             </ScrollView>

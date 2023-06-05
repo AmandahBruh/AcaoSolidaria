@@ -22,7 +22,7 @@ export const styles = StyleSheet.create({
         alignItems:"center",
         justifyContent:"center",
         backgroundColor:"#000",
-        marginBottom:140,
+        // marginBottom:140,
     },
 
     //HomeScreen
@@ -68,6 +68,28 @@ export const styles = StyleSheet.create({
     },
     textoInput:{
         marginBottom:30,
+    },
+
+    //VerMais
+    inputV:{
+        width:"80%",
+        height:50,
+        borderTopLeftRadius:9,
+        borderTopRightRadius:9,
+        borderBottomColor:'#000',
+        borderBottomWidth:3,
+        marginTop:30,
+        marginBottom:80,
+    },
+    image:{
+        width:"100%",
+        height:250,
+        marginBottom:20,
+    },
+    rolagem:{
+        marginTop:-50,
+        width:"100%",
+        textAlign:'center',
     },
 })
 
