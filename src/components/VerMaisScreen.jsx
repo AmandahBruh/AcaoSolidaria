@@ -1,5 +1,7 @@
 import { View, Text } from "react-native";
 import styles from "../utils/styles";
+import Header from "./header/Header";
+
 
 /**
  * @author          João Gabriel <joao.alves1@alunos.sc.senac.br>
@@ -13,7 +15,10 @@ import styles from "../utils/styles";
 
 export default function VerMaisScreen({}){
     return (
-        <View>
+        <View style={styles.container}>
+
+            <Header/>
+
             <Text>Aqui ó</Text>
         </View>
     );
