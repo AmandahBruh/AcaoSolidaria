@@ -19,45 +19,49 @@ export default function VerMaisScreen({}){
         <SafeAreaView style={styles.container}>
             <Header/>
 
-            <TextInput
-                style={styles.inputV}
-                placeholder="Pesquise"
-            />
+            <View style={styles.areaInput}>
+                <TextInput
+                    style={styles.inputV}
+                    placeholder="Pesquise"
+                />
+            </View>
 
             <ScrollView style={styles.rolagem}>
 
-            <Text>Aqui ó</Text>
+            <Text style={styles.textRolagem}>Aqui ó</Text>
 
             <View style={styles.lines}>
                 
-                <Text>Instituição A:</Text>
                 <Image 
                 style={styles.image}
-                    source={{
-                        uri: ' https://gamerview.uai.com.br/wp-content/uploads/2022/09/Tanjiro-Demon-Slayer-DLC.jpg ',
-                      }}
+                source={{
+                    uri: ' https://gamerview.uai.com.br/wp-content/uploads/2022/09/Tanjiro-Demon-Slayer-DLC.jpg ',
+                }}
                 />
+                <Text style={styles.textRolagem}>Instituição A:</Text>
             </View>
             <View style={styles.lines}>
-                <Text>Instituição B:</Text>
                 <Image 
                 style={styles.image}
-                    source={{
-                        uri: ' https://gamerview.uai.com.br/wp-content/uploads/2022/09/Tanjiro-Demon-Slayer-DLC.jpg ',
-                      }}
+                source={{
+                    uri: ' https://gamerview.uai.com.br/wp-content/uploads/2022/09/Tanjiro-Demon-Slayer-DLC.jpg ',
+                }}
                 />
+                <Text style={styles.textRolagem}>Instituição B:</Text>
             </View>
             <View style={styles.lines}>
-                <Text>Instituição C:</Text>
                 <Image 
                 style={styles.image}
-                    source={{
-                        uri: ' https://gamerview.uai.com.br/wp-content/uploads/2022/09/Tanjiro-Demon-Slayer-DLC.jpg ',
-                      }}
+                source={{
+                    uri: ' https://gamerview.uai.com.br/wp-content/uploads/2022/09/Tanjiro-Demon-Slayer-DLC.jpg ',
+                }}
                 />
+                <Text style={styles.textRolagem}>Instituição C:</Text>
             </View>
 
             </ScrollView>
         </SafeAreaView>
     );
 }
+
+//Fazer as imagens estilo posts fazer um quadrado para cada (parecido com o insta)

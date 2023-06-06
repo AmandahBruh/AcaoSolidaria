@@ -7,7 +7,7 @@ export const styles = StyleSheet.create({
     //Estilos universais "eu acho"
     container:{
         flex: 1,
-        backgroundColor: '#D4D4D4',
+        backgroundColor: '#000',
         alignItems: 'center', 
         height:"100%",
     },
@@ -96,24 +96,31 @@ export const styles = StyleSheet.create({
 
     //VerMais
     inputV:{
-        width:"80%",
+        width:"95%",
         height:50,
-        borderTopLeftRadius:9,
-        borderTopRightRadius:9,
+        borderRadius:9,
         borderBottomColor:'#000',
         borderBottomWidth:3,
-        marginTop:30,
-        marginBottom:80,
-    },
+        },
     image:{
         width:"100%",
         height:250,
-        marginBottom:20,
+        marginBottom:"20%",
     },
     rolagem:{
-        marginTop:-50,
+        // marginTop:-,
         width:"100%",
         textAlign:'center',
+    },
+    areaInput:{
+        width:"100%",
+        height:100,
+        backgroundColor:"#000",
+        justifyContent:"center",
+        alignItems:"center",
+    },
+    textRolagem:{
+        color:"#fff",
     },
 })
 
