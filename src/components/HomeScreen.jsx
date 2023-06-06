@@ -7,7 +7,7 @@ import { Button } from "react-native-paper";
 /**
  * @author          João Gabriel <joao.gabriel@alunos.sc.senac.br>
  * @description     Função responsável por exibir a página inicial
- * @version         1.0.1
+ * @version         1.0.3
  * @since           1.0.0
  *
  * @param           {Object} navigation tipo React Navigation
@@ -20,7 +20,7 @@ export default function Home({ navigation }) {
     <View style={styles.containerH}>
       <Header />
 
-      <View>
+      <View style={styles.box}>
         {/* arrumar a navegação do botão */}
         <Button
           style={styles.Button}

@@ -1,13 +1,13 @@
-import { View, Text, TouchableOpacity, Button } from "react-native";
+import { View, Text, TouchableOpacity,  } from "react-native";
 import styles from "../utils/styles";
 import React from "react";
 import Header from "./header/Header";
-import { TextInput } from "react-native-paper";
+import { TextInput, Button } from "react-native-paper";
 
 /**
  * @author          João Gabriel <joao.alves1@alunos.sc.senac.br>
  * @description     Pagina responsavel por cadastrar instituições
- * @version         1.0.1
+ * @version         1.0.3
  * @since           1.0.0
  *
  * @export          {function} cadastrarIScreen
@@ -36,15 +36,14 @@ export default function CadastrarIScreen({navigation}){
                 placeholder="Senha ..."
                 style={styles.input}
                 />
-                <TouchableOpacity>
-                <Text style={styles.textoInput}>Loge-se ?</Text>
+                <TouchableOpacity onPress={() => navigation.navigate("LoginScreen")}>
+                    <Text style={styles.textoInput}>Já está cadastrado? <Text style={styles.TouchableOpacity}>Entrar</Text> </Text>
                 </TouchableOpacity>
 
                 <Button
-                title="Cadastrar"
-                color="#000"
-                style={styles.Button}
-                />
+                style={styles.ButtonL}
+                mode="contained"
+                >Cadastrar</Button>
             </View>    
 
         </View>

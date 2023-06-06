@@ -55,7 +55,6 @@ function TabsNavigator() {
       <Tabs.Screen
         name="CadastrarIScreens" //cadastrarIScreens
         component={CadastrarIScreens}
-        
       />
       <Tabs.Screen name="CadastrarPScreens" component={CadastrarPScreens} />
     </Tabs.Navigator>

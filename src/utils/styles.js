@@ -24,14 +24,29 @@ export const styles = StyleSheet.create({
         backgroundColor:"#000",
         // marginBottom:140,
     },
+    TouchableOpacity:{
+        color:"#160DBF",
+        fontWeight:"bold",
+    },
+    input:{
+        width:"80%",
+        height:50,
+        borderTopLeftRadius:9,
+        borderTopRightRadius:9,
+        borderBottomColor:'#000',
+        borderBottomWidth:3,
+        marginTop:30,
+    },
 
     //HomeScreen
     box:{
-        width:"100%",
-        height:"70%",
+        width:"90%",
+        height:"50%",
         backgroundColor:"#f2f2f2",
-        borderTopEndRadius:7,
-        borderTopStartRadius:7,
+        borderRadius:7,
+        marginTop:150,
+        justifyContent:"center",
+        alignItems:"center",
     },
     containerH:{
         width:"100%",
@@ -40,7 +55,7 @@ export const styles = StyleSheet.create({
         backgroundColor:"#D4D4D4",
     },
     Button:{
-        width:"100%",
+        width:"70%",
         height:50,
         marginBottom:20,
         justifyContent:"center",
@@ -49,25 +64,34 @@ export const styles = StyleSheet.create({
     },
 
     //LoginScreen
-    input:{
-        width:"60%",
+    inputL:{
+        width:"80%",
         height:50,
         borderTopLeftRadius:9,
         borderTopRightRadius:9,
         borderBottomColor:'#000',
         borderBottomWidth:3,
-        marginTop:30,
     },
     boxL:{
-        width:"100%",
+        width:"90%",
         height:400,
+        borderRadius:7,
+        marginTop:150,
         alignItems:"center",
         textAlign:"right",
         justifyContent:"center",
-        backgroundColor:"#D4D4D4",
+        backgroundColor:"#fff",
     },
     textoInput:{
         marginBottom:30,
+    },
+    ButtonL:{
+        width:"60%",
+        height:50,
+        marginBottom:20,
+        justifyContent:"center",
+        backgroundColor:"#000",
+        borderRadius:7,
     },
 
     //VerMais

@@ -1,6 +1,6 @@
 import { onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
-import { View, Text, TouchableOpacity, Button } from "react-native";
-import { TextInput } from "react-native-paper";
+import { View, Text, TouchableOpacity,  } from "react-native";
+import { TextInput, Button } from "react-native-paper";
 import styles from "../utils/styles";
 import Header from "./header/Header";
 import { useEffect, useState } from "react";
@@ -10,7 +10,7 @@ import { auth } from "../config/firebase";
 /**
  * @author          João Gabriel <joao.alves1@alunos.sc.senac.br>
  * @description     Pagina responsável por fazer o login de pessoas e instituições
- * @version         1.0.2
+ * @version         1.0.3
  * @since           1.0.0
  *
  * @export          {function} loginScreen
@@ -59,30 +59,29 @@ export default function LoginScreen({navigation}){
 
                 <TextInput
                 placeholder="Login..."
-                style={styles.input}
+                style={styles.inputL}
                 value="email"
                 onChangeText={setEmail}
                 />  
-                <TouchableOpacity>
-                <Text>Cadastre-se</Text>
-                </TouchableOpacity> 
+                <TouchableOpacity onPress={() => navigation.navigate("CadastrarPScreens")}>
+                    <Text style={styles.textoInput}>Cadastre-se</Text>
+                </TouchableOpacity>
 
                 <TextInput
                 placeholder="Senha..."
-                style={styles.input}
+                style={styles.inputL}
                 value="password"
                 onChangeText={setPassword}
                 />
-                <TouchableOpacity>
-                <Text style={styles.textoInput}>Esqueceu a senha ?</Text>
+                <TouchableOpacity onPress={() => navigation.navigate("CadastrarIScreens")}>
+                    <Text style={styles.textoInput}>Esqueceu a senha?</Text>
                 </TouchableOpacity>
 
                 <Button
-                title="Logar"
-                color="#000"
-                style={styles.Button}
+                style={styles.ButtonL}
                 onPress={handleLogin}
-                />
+                mode="contained"
+                >Logar</Button>
             </View>    
 
         </View>
