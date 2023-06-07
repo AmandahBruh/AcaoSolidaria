@@ -6,6 +6,7 @@ import CadastrarIScreens from "./components/CadastrarIScreen";
 import CadastrarPScreens from "./components/CadastrarPScreen";
 import LoginScreen from "./components/LoginScreen";
 import VerMaisScreen from "./components/VerMaisScreen";
+import RecSenhaScreen from "./components/RecuperarScreen";
 
 /**
  * @author          João Gabriel <joao.alves1@alunos.sc.senac.br>
@@ -57,6 +58,7 @@ function TabsNavigator() {
         component={CadastrarIScreens}
       />
       <Tabs.Screen name="CadastrarPScreens" component={CadastrarPScreens} />
+      <Tabs.Screen name="RecuperarScreen" component={RecSenhaScreen} />
     </Tabs.Navigator>
   );
 }

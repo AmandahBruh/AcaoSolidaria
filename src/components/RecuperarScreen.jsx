@@ -18,7 +18,7 @@ import Header from "./header/Header";
  * @return          {React.Component} 
  */
 
-export default function RecSenhaScreen() {
+export default function RecSenhaScreen({ navigation }) {
   const [email, setEmail] = useState("");
   const [senha, setSenha] = useState("");
 

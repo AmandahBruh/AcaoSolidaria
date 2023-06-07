@@ -105,7 +105,8 @@ export const styles = StyleSheet.create({
     image:{
         width:"100%",
         height:250,
-        marginBottom:"20%",
+        marginTop:30,
+        marginBottom:10,
     },
     rolagem:{
         // marginTop:-,
@@ -121,6 +122,24 @@ export const styles = StyleSheet.create({
     },
     textRolagem:{
         color:"#fff",
+        fontSize:15,
+    },
+    textRolagem2:{
+        color:"#fff",
+        textAlign:"justify",
+        marginBottom:"20%",
+    },
+    lines:{
+        borderTopWidth:3,
+        borderBottomWidth:3,
+        borderColor:"#fff",
+        textAlign:"left",
+    },
+    TitleInst:{
+        color:"#fff",
+        fontSize:15,
+        fontWeight:"bold",
+        marginTop:5,
     },
 
     //RecuperarScreen

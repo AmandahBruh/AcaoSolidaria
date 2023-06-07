@@ -53,6 +53,14 @@ export default function Home({ navigation }) {
         >
           Ver Mais
         </Button>
+        <Button
+          style={styles.Button}
+          mode="contained"
+          onPress={() => navigation.navigate("RecuperarScreen")}
+          color="#000"
+        >
+          Recuperar senha
+        </Button>
       </View>
     </View>
   );
