@@ -10,8 +10,10 @@ import { addDoc, collection } from "firebase/firestore";
 
 /**
  * @author          João Gabriel <joao.alves1@alunos.sc.senac.br>
+ * @author          Amanda Richetti <amanda.rondao@alunos.sc.senac.br>
+ * 
  * @description     Pagina responsável por cadastrar pessoas
- * @version         1.0.3
+ * @version         1.0.4
  * @since           1.0.0
  *
  * @export          {function} cadastrarPScreen

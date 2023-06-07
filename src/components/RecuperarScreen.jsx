@@ -1,9 +1,22 @@
 // import { createUserWithEmailAndPassword } from "firebase/auth";
-import { View, TextInput } from "react-native";
-import { Button, Text } from "react-native-paper";
+import { View } from "react-native";
+import { Button, TextInput } from "react-native-paper";
 import styles from "../utils/styles";
 import { passwordReset } from "../config/firebase";
 import { useState } from "react";
+import Header from "./header/Header";
+
+/**
+ * @author          João Gabriel <joao.alves1@alunos.sc.senac.br>
+ * @author          Amanda Richetti <amanda.rondao@alunos.sc.senac.br>
+ * 
+ * @description     Pagina responsavel por recuperar senha
+ * @version         1.0.4
+ * @since           1.0.3
+ *
+ * @export          {function} RecSenhaScreen
+ * @return          {React.Component} 
+ */
 
 export default function RecSenhaScreen() {
   const [email, setEmail] = useState("");
@@ -23,7 +36,9 @@ export default function RecSenhaScreen() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Recuperar Senha</Text>
+
+      <Header/>
+      <View style={styles.boxL}>
 
       <TextInput
         style={styles.input}
@@ -35,12 +50,15 @@ export default function RecSenhaScreen() {
       /> 
 
       <Button
-        style={styles.button}
+        style={styles.ButtonR}
         mode="contained"
         onPress={handlePasswordReset}
       >
         Recuperar Senha
       </Button>
+
+      </View>
     </View>
   );
 }
+

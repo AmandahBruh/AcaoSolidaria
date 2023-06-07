@@ -122,6 +122,16 @@ export const styles = StyleSheet.create({
     textRolagem:{
         color:"#fff",
     },
+
+    //RecuperarScreen
+    ButtonR:{
+        width:"70%",
+        height:50,
+        marginTop:20,
+        justifyContent:"center",
+        backgroundColor:"#000",
+        borderRadius:7,
+    },
 })
 
 export default styles;
