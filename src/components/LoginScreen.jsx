@@ -20,7 +20,7 @@ import { auth } from "../config/firebase";
 export default function LoginScreen({navigation}){
 
     const [email, setEmail] = useState('')
-    const [password, setPassword] = useState('')
+    const [senha, setSenha] = useState('')
 
 
     useEffect(() => {
@@ -28,7 +28,7 @@ export default function LoginScreen({navigation}){
         onAuthStateChanged(auth, (user) => {
             if (user) {
                 console.log("Usuário UID: ", user.uid)
-                navigation.navigate('MBTNavigation')
+                navigation.navigate('VerMaisScreen')
             } else {
                 console.log("Usuário não logado")
             }
@@ -38,10 +38,10 @@ export default function LoginScreen({navigation}){
     }, [])
 
     function handleLogin() {
-        signInWithEmailAndPassword(auth, email, password)
+        signInWithEmailAndPassword(auth, email, senha)
             .then((userCredential) => {
                 const user = userCredential.user;
-                navigation.navigate('MBTNavigation')
+                navigation.navigate('VerMaisScreen')
                 console.log(user)
             })
             .catch((error) => {
@@ -58,9 +58,9 @@ export default function LoginScreen({navigation}){
             <View style={styles.boxL}>
 
                 <TextInput
-                placeholder="Login..."
+                placeholder="Email..."
                 style={styles.inputL}
-                value="email"
+                value={email}
                 onChangeText={setEmail}
                 />  
                 <TouchableOpacity onPress={() => navigation.navigate("CadastrarPScreens")}>
@@ -70,8 +70,8 @@ export default function LoginScreen({navigation}){
                 <TextInput
                 placeholder="Senha..."
                 style={styles.inputL}
-                value="password"
-                onChangeText={setPassword}
+                value={senha}
+                onChangeText={setSenha}
                 />
                 <TouchableOpacity onPress={() => navigation.navigate("CadastrarIScreens")}>
                     <Text style={styles.textoInput}>Esqueceu a senha?</Text>
